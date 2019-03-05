@@ -1,0 +1,15 @@
+
+
+<view style='display:flex;justify-content:center;margin-top:20vh'>
+
+<image class='avatar' src="../icon/logo.png" style="width:100rpx;height:100rpx"></image>
+
+
+</view>
+<view style='display:flex;justify-content:center;margin-top:10vh'>
+<text>Combination of Wisdom</text>
+</view>
+
+
+
+<button class="bt" open-type="getUserInfo" bindgetuserinfo="getUserInfo">Wechat Login </button>

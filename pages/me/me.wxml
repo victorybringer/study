@@ -1,0 +1,71 @@
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+<view class="user">
+
+
+
+
+
+<image class='avatar' src="{{userinfo.avatarUrl}}"></image>
+    
+    
+  
+    
+    
+  
+
+</view>
+
+
+<view class="nickname">
+  <text >{{userinfo.nickName}}</text>
+</view>
+
+
+
+
+
+
+
+<view class="layer2">
+
+
+<button class="bt2"  bindtap="profile">   
+
+
+<image class='btimg' src='../icon/account.png'></image>
+    <text class="btview">Profile</text>
+    
+    
+    
+    </button>
+
+</view>
+
+<view class="layer2">
+
+
+<button class="bt2"  bindtap="exit">   
+
+
+<image class='btimg' src='../icon/exit.png'></image>
+    <text class="btview">Exit</text>
+    
+    
+    
+    </button>
+
+</view>

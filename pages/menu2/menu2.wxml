@@ -1,0 +1,205 @@
+
+
+
+<view style="display:flex"  >
+
+<view class="subview"  wx:for="{{array1}}"style="border-color:{{color1[index]}}">
+<button id="{{index}}" class="bt" bindtap="bt"> {{array1[index]}}
+
+</button>
+</view>
+
+
+</view>
+
+<view  wx:if="{{color1[2]!='white'}}"style="display:flex" >
+
+<view  wx:for="{{array2}}"class="subview" style="border-color:{{color2[index]}}" >
+<button id="{{index}}" class="bt" bindtap="bt2" > {{array2[index]}}
+
+</button>
+</view>
+
+
+
+
+
+</view>
+
+<view  wx:if="{{color1[2]!='white'}}"style="display:flex" >
+
+<view  wx:for="{{array3}}"class="subview" style="border-color:{{color3[index]}}" >
+<button id="{{index}}" class="bt" bindtap="bt3" > {{array3[index]}}
+
+</button>
+
+
+</view>
+
+
+
+</view>
+
+
+
+
+
+
+<view  wx:if="{{color1[2]=='white'}}" style="display:flex" >
+
+<view wx:for="{{farray}}"class="subview" style="border-color:{{fcolor[index]}}">
+<button id="{{index}}" class="bt" bindtap="fbt">{{farray[index]}}
+
+</button>
+</view>
+
+</view>
+
+
+
+
+<view wx:if="{{color1[0]=='white'}}">
+
+<swiper style="width:100%;height:80vh" indicator-dots="true" current="{{cur}}"
+ >
+  <block wx:for="{{currentbook.length/3}}" wx:for-index="n">
+  
+  
+      <swiper-item>
+    
+<view style='margin-top:5vh' wx:for="{{array2.length}}" wx:for-index="k" >
+
+<view style='display:flex;align-items:center'>
+ <image  wx:if="{{3*n+k<currentbook.length}}"id="{{3*n+k}}" bindtap="allimage2" class= "image" src="{{currentbook[3*n+k][0]}}">
+        
+        
+        </image>
+
+       
+ <view class="tx2">{{currentbook[3*n+k][1]}}</view>
+
+</view>
+
+
+</view>
+
+
+
+    </swiper-item>
+  
+  
+  </block>
+
+
+</swiper>
+
+
+
+
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<view wx:if="{{color1[1]=='white'}}">
+
+<swiper style="width:100%;height:80vh" indicator-dots="true" current="{{cur}}"
+ >
+ 
+  
+  
+      <swiper-item  id="{{n}}" wx:for="{{currentvideo.length/3}}" wx:for-index="n"    >
+    
+<view style='margin-top:5vh' wx:for="{{array2.length}}" wx:for-index="k" >
+
+<view style='display:flex;align-items:center'>
+ <image wx:if="{{3*n+k<currentvideo.length}}"id="{{3*n+k}}" bindtap="allimage" class= "image" src="{{currentvideo[3*n+k][0]}}">
+        
+        
+        </image>
+
+       
+ <view class="tx2">{{currentvideo[3*n+k][1]}}</view>
+
+</view>
+
+
+</view>
+
+
+
+    </swiper-item>
+  
+  
+
+
+
+</swiper>
+
+
+
+
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <view wx:if="{{none1=='false'&&fcolor[0]=='white'&&color1[2]=='white'}}" wx:for="{{video}}" style="margin-top:5vh;display:flex;align-items:center">
+       
+       
+       <image id="{{index}}" class= "image" bindtap="image" src="{{video[index][0]}}">
+        
+        
+        </image>
+
+
+        <text class="tx2">{{video[index][1]}}</text>
+</view>
+
+
+
+  <view  wx:if="{{none2=='false'&&fcolor[1]=='white'&&color1[2]=='white'}}" style="margin-top:5vh;display:flex;align-items:center"wx:for="{{book}}">
+  <image id="{{index}}" class= "image" bindtap="image2" src="{{book[index][0]}}">
+        
+        
+        </image>
+
+
+        <text class="tx2">{{book[index][1]}}</text>
+</view >
+
+

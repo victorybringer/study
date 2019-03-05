@@ -1,0 +1,31 @@
+<view class="tx0">
+<view class="title">Gender</view>
+<text class="tx2" wx:if="{{userinfo.gender==0}}"></text>
+<text class="tx2" wx:if="{{userinfo.gender==2}}">Female</text>
+<text class="tx2" wx:if="{{userinfo.gender==1}}">Male</text>
+</view>
+
+<view class="tx">
+<view class="title">Province</view>
+<text class="tx2">{{userinfo.province}}</text>
+</view>
+
+
+<view class="tx" >
+<view class="title">City</view>
+<text class="tx2">{{userinfo.city}}</text>
+</view>
+
+<view class="tx" >
+<view class="title">Grade</view>
+<text class="tx2">{{grade}}</text>
+</view>
+
+<view class="tx" >
+<view class="title">Major</view>
+<text class="tx2">{{major}}</text>
+</view>
+
+
+
+

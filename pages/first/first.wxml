@@ -1,0 +1,24 @@
+
+<view class="tx0">
+<text style="font-size:42rpx">Profile</text>
+
+</view>
+
+<view class="tx1" >
+<text>Grade</text>
+<picker class="tx2" bindchange="bindPickerChange1" range="{{array1}}" >{{array1[index1]}}
+
+</picker>
+</view>
+
+<view class="tx" >
+<text>Major</text>
+<picker class="tx2" bindchange="bindPickerChange2" range="{{array2}}" >{{array2[index2]}}
+
+</picker>
+</view>
+<view style="display:flex;justify-content:center">
+<button class="bt" bindtap='confirm'>Confirm </button>
+</view>
+
+

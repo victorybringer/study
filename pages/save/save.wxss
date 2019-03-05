@@ -1,0 +1,17 @@
+
+page {
+  background: rgb(231, 230, 230);
+}
+.text{
+  display:flex;align-items:center;font-size:25rpx;width:350rpx;height:20vh;margin-left: 30rpx
+  
+ 
+}
+.image{
+
+  margin-left:23.3333rpx;
+ border-radius: 8rpx;
+  width:340rpx;
+  height:20vh
+  
+}

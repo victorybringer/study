@@ -1,0 +1,83 @@
+{
+  "pages":[
+
+    "pages/index/index",
+      "pages/first/first",
+  
+    "pages/menu2/menu2",
+
+
+  
+    "pages/save/save",
+  "pages/me/me",
+ 
+
+
+
+  "pages/recommend/recommend",
+
+ "pages/Book/Book",
+"pages/profile/profile",
+
+  "pages/video/video",
+      
+
+"pages/logs/logs"
+
+
+
+
+
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#CD0000",
+    "navigationBarTitleText": "Combination of Wisdom",
+    "navigationBarTextStyle":"white"
+  },
+
+"tabBar": {
+  "color": "#a9b7b7",
+  "selectedColor": "#11cd6e",
+  "borderStyle": "black",
+  "list": [
+    {
+      "pagePath": "pages/recommend/recommend",
+      "selectedIconPath": "pages/icon/home.png",
+      
+      "iconPath": "pages/icon/home.png",
+      "text": "Recommend"
+    },
+    {
+      "selectedIconPath": "pages/icon/menu.png",
+      "pagePath": "pages/menu2/menu2",
+      "iconPath": "pages/icon/menu.png",
+      "text": "Menu"
+    },
+    {"selectedIconPath": "pages/icon/me.png",
+      "pagePath": "pages/me/me",
+      "iconPath": "pages/icon/me.png",
+      "text": "Profile"
+    }
+  ]
+}
+,
+
+
+
+
+"networkTimeout": {
+  "request": 300000
+}
+
+
+
+
+
+
+
+
+
+
+}

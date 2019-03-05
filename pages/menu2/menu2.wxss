@@ -1,0 +1,53 @@
+page {
+  background: rgb(231, 230, 230);
+}
+
+.bt{
+  border-radius: 0rpx;
+
+
+  background:#CD0000;
+ 
+  color: white;
+font-size: 30rpx;
+ height:6vh
+}
+.bt::after{
+  border:none
+}
+
+.subview{
+ 
+  width: 400rpx;
+
+
+    background:#CD0000;
+ 
+      
+         border-style: solid;
+ 
+ border-bottom-width:10rpx;
+  border-top-width:0rpx;
+   border-left-width:0rpx;
+    border-right-width:0rpx;
+}
+
+.image{
+
+  margin-left:23.3333rpx;
+ border-radius: 8rpx;
+  width:340rpx;
+  height:20vh
+  
+}
+
+
+
+.tx2{
+  display: flex;
+ margin-left:23.3333rpx;
+ width: 340rpx;
+ font-size: small;
+ 
+
+}

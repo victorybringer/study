@@ -1,0 +1,91 @@
+<view style='margin-top:2vh'>Video
+<swiper style="width:100%;height:45vh" indicator-dots="true" current="{{cur}}"
+  autoplay="true" interval="4000" >
+  <block wx:for="{{video}}">
+    <swiper-item>
+      <image id="{{index}}"bindtap="image" src="{{video[index][0]}}" style="width:100%;height:35vh" ></image>
+          <text class="tx2">{{video[index][1]}}</text>
+    </swiper-item>
+  
+   
+  
+  
+  </block>
+
+
+</swiper>
+
+</view>
+<view>Book
+<swiper style="width:100%;height:45vh" indicator-dots="true" current="{{cur}}"
+  autoplay="true" interval="4000" >
+  <block wx:for="{{Book}}">
+    <swiper-item>
+      <image id="{{index}}" src="{{Book[index][0]}}" bindtap="book"style="width:100%;height:35vh" ></image>
+       <text class="tx2">{{Book[index][1]}}</text>
+    </swiper-item>
+  
+    
+  
+  
+  </block>
+
+
+</swiper>
+
+
+</view>
+
+
+
+
+
+
+       
+   
+    
+
+    
+ 
+
+
+
+
+
+
+       
+   
+    
+
+
+
+
+
+
+
+
+
+
+       
+   
+    
+
+    
+ 
+
+
+
+
+
+
+       
+   
+    
+
+    
+ 
+ 
+ 
+ 
+ 
+ 

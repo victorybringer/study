@@ -1,0 +1,98 @@
+    <video src="{{url}}" style="width:100%;height:40vh" poster="{{image}}"></video>
+<view style="font-size:small;white-space:nowrap; overflow: hidden;text-overflow:ellipsis"
+ >{{name}}</view>
+
+<view wx:if="{{share=='false'}}" style="display:flex; margin-top:5vh;justify-content:center">
+
+<image  wx:if="{{click1=='true'}}" src="../icon/good2.png " style="width:50rpx;height:50rpx" bindtap="image1"></image>
+<image wx:else src="../icon/good.png " style="width:50rpx;height:50rpx" bindtap="image1"></image>
+
+<image wx:if="{{click2=='true'}}" src="../icon/save2.png " style="width:50rpx;height:50rpx;margin-left:120rpx" bindtap="image2"></image>
+
+<image wx:else src="../icon/save.png " style="width:50rpx;height:50rpx;margin-left:120rpx" bindtap="image2"></image>
+
+
+</view>
+
+<view wx:if="{{share=='false'}}" style="display:flex; margin-top:5vh;justify-content:center">
+
+
+<view   wx:if="{{count==''}}"style="font-size:25rpx" bindtap="image">
+<text>\r\t\r\t\r\t\r\t+0</text>
+</view>
+
+
+
+
+<view wx:else style="font-size:25rpx" bindtap="image">
+<text >\r\t\r\t\r\t\r\t+{{count}}</text>
+</view>
+
+<view  style="font-size:25rpx;margin-left:120rpx" bindtap="image">
+
+<text >Favorite</text>
+</view>
+
+
+
+
+
+</view>
+
+<view>
+
+<button wx:if="{{share=='false'}}" class="bt"open-type="share">Share</button>
+<button wx:else class="bt" bindtap="back">Back to Index</button>
+
+</view>
+
+
+
+
+<view style="margin-top:5vh;border-style: solid;border-color: #878787;border-bottom-width:0.2rpx;;border-top-width:0rpx;   border-left-width:0rpx;  border-right-width:0rpx">
+<text style="font-size:30rpx">Comment</text>
+</view>
+
+
+<view  wx:for="{{comment}}" style="border-style: solid;border-color: #878787;border-bottom-width:0.2rpx;border-top-width:0rpx;   border-left-width:0rpx;  border-right-width:0rpx">
+<view style="display:flex;">
+
+
+<image  src="{{comment[index][4]}}" style="width:50rpx;height:50rpx;" >
+
+
+</image>
+
+
+
+<text  style="font-size:25rpx;margin-left:50rpx;align-items:center;display:flex">{{comment[index][1]}}</text>
+<text style="font-size:25rpx;margin-left:50rpx;align-items:center;display:flex">{{comment[index][2]}}</text>
+<text style="font-size:25rpx;margin-left:50rpx;align-items:center;display:flex">{{comment[index][3]}}</text>
+
+</view >
+
+<view style="justify-content:center;display:flex;margin-top:5vh">
+<textarea disabled="true" value="{{comment[index][0]}}" style="height:20vh;width:80%"></textarea>
+
+</view>
+</view>
+
+
+
+
+<view wx:if="{{share=='false'}}" style="margin-top:10vh;font-size:30rpx">My</view>
+<view wx:if="{{share=='false'}}" style=" margin-top:2vh">
+<view style="justify-content:center;display:flex">
+<textarea style="border-style: solid;border-color: #878787;border-bottom-width:0.2rpx;border-top-width:0.2rpx; border-radius:20rpx;  border-left-width:0.2rpx;  border-right-width:0.2rpx; height:20vh;width:80%"
+bindinput="input" value="{{text}}"
+  
+
+  
+ 
+ 
+></textarea>
+
+</view>
+</view>
+
+<button wx:if="{{share=='false'}}" class="bt2"bindtap="send">Send</button>

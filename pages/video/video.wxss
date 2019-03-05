@@ -1,0 +1,16 @@
+.bt{
+
+margin-top:5vh;
+background-color: rgb(255, 0, 0);
+color: white;
+ width: 70vw;
+ font-size: 2.2vh;
+}
+.bt2{
+
+margin-top:5vh;
+background-color: rgb(23, 173, 6);
+color: white;
+ width: 70vw;
+ font-size: 2.2vh;
+}
