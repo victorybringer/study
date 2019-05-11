@@ -7,6 +7,12 @@
  `运行源码构建.bat`<br>
 ## 3.工程源码导入<br>
  `使用Eclipse导入工程 `<br>
+# Frontend Install 
+## 1.安装微信web开发者工具<br>
+## 2.导入MiniProgram,APPID为wx27b44fda89f37897<br>
+
+
+
 
 
 
